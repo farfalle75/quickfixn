@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("QuickFIX/n")]
+[assembly: AssemblyTitle("QuickFIX/n (FIX4.3 messages")]
 [assembly: AssemblyDescription("Open-source C# implementation of QuickFIX")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Connamara Systems, LLC and QuickFIX/n contributors")]
@@ -32,13 +32,4 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyVersion("1.6.0.0")]
 [assembly: AssemblyFileVersion("1.6.0.0")]
 
-// Ensure message assemblies have access to internals from this assembly
-[assembly: InternalsVisibleTo("QuickFix.FIX.4.0")]
-[assembly: InternalsVisibleTo("QuickFix.FIX.4.1")]
-[assembly: InternalsVisibleTo("QuickFix.FIX.4.2")]
-[assembly: InternalsVisibleTo("QuickFix.FIX.4.3")]
-[assembly: InternalsVisibleTo("QuickFix.FIX.4.4")]
-[assembly: InternalsVisibleTo("QuickFix.FIX.5.0")]
-[assembly: InternalsVisibleTo("QuickFix.FIX.5.0.SP1")]
-[assembly: InternalsVisibleTo("QuickFix.FIX.5.0.SP2")]
 

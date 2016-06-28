@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuickFix.FIX50SP2</RootNamespace>
+    <AssemblyName>QuickFix.FIX.5.0.SP2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectGuid>{83F32DA4-D640-44D6-B7F6-B04EEE1E252F}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdjustedPositionReport.cs" />
+    <Compile Include="Advertisement.cs" />
+    <Compile Include="AllocationInstruction.cs" />
+    <Compile Include="AllocationInstructionAck.cs" />
+    <Compile Include="AllocationInstructionAlert.cs" />
+    <Compile Include="AllocationReport.cs" />
+    <Compile Include="AllocationReportAck.cs" />
+    <Compile Include="ApplicationMessageReport.cs" />
+    <Compile Include="ApplicationMessageRequest.cs" />
+    <Compile Include="ApplicationMessageRequestAck.cs" />
+    <Compile Include="AssignmentReport.cs" />
+    <Compile Include="BidRequest.cs" />
+    <Compile Include="BidResponse.cs" />
+    <Compile Include="BusinessMessageReject.cs" />
+    <Compile Include="CollateralAssignment.cs" />
+    <Compile Include="CollateralInquiry.cs" />
+    <Compile Include="CollateralInquiryAck.cs" />
+    <Compile Include="CollateralReport.cs" />
+    <Compile Include="CollateralRequest.cs" />
+    <Compile Include="CollateralResponse.cs" />
+    <Compile Include="Confirmation.cs" />
+    <Compile Include="ConfirmationAck.cs" />
+    <Compile Include="ConfirmationRequest.cs" />
+    <Compile Include="ContraryIntentionReport.cs" />
+    <Compile Include="CrossOrderCancelReplaceRequest.cs" />
+    <Compile Include="CrossOrderCancelRequest.cs" />
+    <Compile Include="DerivativeSecurityList.cs" />
+    <Compile Include="DerivativeSecurityListRequest.cs" />
+    <Compile Include="DerivativeSecurityListUpdateReport.cs" />
+    <Compile Include="DontKnowTrade.cs" />
+    <Compile Include="Email.cs" />
+    <Compile Include="ExecutionAcknowledgement.cs" />
+    <Compile Include="ExecutionReport.cs" />
+    <Compile Include="IOI.cs" />
+    <Compile Include="ListCancelRequest.cs" />
+    <Compile Include="ListExecute.cs" />
+    <Compile Include="ListStatus.cs" />
+    <Compile Include="ListStatusRequest.cs" />
+    <Compile Include="ListStrikePrice.cs" />
+    <Compile Include="MarketDataIncrementalRefresh.cs" />
+    <Compile Include="MarketDataRequest.cs" />
+    <Compile Include="MarketDataRequestReject.cs" />
+    <Compile Include="MarketDataSnapshotFullRefresh.cs" />
+    <Compile Include="MarketDefinition.cs" />
+    <Compile Include="MarketDefinitionRequest.cs" />
+    <Compile Include="MarketDefinitionUpdateReport.cs" />
+    <Compile Include="MassQuote.cs" />
+    <Compile Include="MassQuoteAcknowledgement.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="MessageFactory.cs" />
+    <Compile Include="MultilegOrderCancelReplace.cs" />
+    <Compile Include="NetworkCounterpartySystemStatusRequest.cs" />
+    <Compile Include="NetworkCounterpartySystemStatusResponse.cs" />
+    <Compile Include="NewOrderCross.cs" />
+    <Compile Include="NewOrderList.cs" />
+    <Compile Include="NewOrderMultileg.cs" />
+    <Compile Include="NewOrderSingle.cs" />
+    <Compile Include="News.cs" />
+    <Compile Include="OrderCancelReject.cs" />
+    <Compile Include="OrderCancelReplaceRequest.cs" />
+    <Compile Include="OrderCancelRequest.cs" />
+    <Compile Include="OrderMassActionReport.cs" />
+    <Compile Include="OrderMassActionRequest.cs" />
+    <Compile Include="OrderMassCancelReport.cs" />
+    <Compile Include="OrderMassCancelRequest.cs" />
+    <Compile Include="OrderMassStatusRequest.cs" />
+    <Compile Include="OrderStatusRequest.cs" />
+    <Compile Include="PartyDetailsListReport.cs" />
+    <Compile Include="PartyDetailsListRequest.cs" />
+    <Compile Include="PositionMaintenanceReport.cs" />
+    <Compile Include="PositionMaintenanceRequest.cs" />
+    <Compile Include="PositionReport.cs" />
+    <Compile Include="Quote.cs" />
+    <Compile Include="QuoteCancel.cs" />
+    <Compile Include="QuoteRequest.cs" />
+    <Compile Include="QuoteRequestReject.cs" />
+    <Compile Include="QuoteResponse.cs" />
+    <Compile Include="QuoteStatusReport.cs" />
+    <Compile Include="QuoteStatusRequest.cs" />
+    <Compile Include="RegistrationInstructions.cs" />
+    <Compile Include="RegistrationInstructionsResponse.cs" />
+    <Compile Include="RequestForPositions.cs" />
+    <Compile Include="RequestForPositionsAck.cs" />
+    <Compile Include="RFQRequest.cs" />
+    <Compile Include="SecurityDefinition.cs" />
+    <Compile Include="SecurityDefinitionRequest.cs" />
+    <Compile Include="SecurityDefinitionUpdateReport.cs" />
+    <Compile Include="SecurityList.cs" />
+    <Compile Include="SecurityListRequest.cs" />
+    <Compile Include="SecurityListUpdateReport.cs" />
+    <Compile Include="SecurityStatus.cs" />
+    <Compile Include="SecurityStatusRequest.cs" />
+    <Compile Include="SecurityTypeRequest.cs" />
+    <Compile Include="SecurityTypes.cs" />
+    <Compile Include="SettlementInstructionRequest.cs" />
+    <Compile Include="SettlementInstructions.cs" />
+    <Compile Include="SettlementObligationReport.cs" />
+    <Compile Include="StreamAssignmentReport.cs" />
+    <Compile Include="StreamAssignmentReportACK.cs" />
+    <Compile Include="StreamAssignmentRequest.cs" />
+    <Compile Include="TradeCaptureReport.cs" />
+    <Compile Include="TradeCaptureReportAck.cs" />
+    <Compile Include="TradeCaptureReportRequest.cs" />
+    <Compile Include="TradeCaptureReportRequestAck.cs" />
+    <Compile Include="TradingSessionList.cs" />
+    <Compile Include="TradingSessionListRequest.cs" />
+    <Compile Include="TradingSessionListUpdateReport.cs" />
+    <Compile Include="TradingSessionStatus.cs" />
+    <Compile Include="TradingSessionStatusRequest.cs" />
+    <Compile Include="UserNotification.cs" />
+    <Compile Include="UserRequest.cs" />
+    <Compile Include="UserResponse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\QuickFix.csproj">
+      <Project>{d67079da-6c49-48b2-93ab-1c3e879f5a0b}</Project>
+      <Name>QuickFix</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

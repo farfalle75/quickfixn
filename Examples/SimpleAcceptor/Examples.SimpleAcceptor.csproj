@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -10,13 +10,14 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SimpleAcceptor</RootNamespace>
     <AssemblyName>SimpleAcceptor</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation />
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -26,6 +27,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -34,6 +36,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -55,6 +58,30 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\QuickFIXn\Message\FIX40\QuickFix.FIX.4.0.csproj">
+      <Project>{899d4fec-6a3f-4037-8989-da9eb6bbfdc6}</Project>
+      <Name>QuickFix.FIX.4.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\QuickFIXn\Message\FIX41\QuickFix.FIX.4.1.csproj">
+      <Project>{37b9ab56-3795-41c0-87d3-c8b10e92ba14}</Project>
+      <Name>QuickFix.FIX.4.1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\QuickFIXn\Message\FIX42\QuickFix.FIX.4.2.csproj">
+      <Project>{e20f3169-7220-4f09-8f98-233ce02df4e9}</Project>
+      <Name>QuickFix.FIX.4.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\QuickFIXn\Message\FIX43\QuickFix.FIX.4.3.csproj">
+      <Project>{552c0168-920c-41fc-8050-a827e3eeb69d}</Project>
+      <Name>QuickFix.FIX.4.3</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\QuickFIXn\Message\FIX44\QuickFix.FIX.4.4.csproj">
+      <Project>{d464771a-efe2-450d-b880-68d3cf55926d}</Project>
+      <Name>QuickFix.FIX.4.4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\QuickFIXn\Message\FIX50\QuickFix.FIX.5.0.csproj">
+      <Project>{e84e6a79-39ba-472f-a64a-bf90c2045074}</Project>
+      <Name>QuickFix.FIX.5.0</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\QuickFIXn\QuickFix.csproj">
       <Project>{D67079DA-6C49-48B2-93AB-1C3E879F5A0B}</Project>
       <Name>QuickFix</Name>

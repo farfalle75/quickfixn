@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E20F3169-7220-4F09-8F98-233CE02DF4E9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuickFix.FIX42</RootNamespace>
+    <AssemblyName>QuickFix.FIX.4.2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Advertisement.cs" />
+    <Compile Include="Allocation.cs" />
+    <Compile Include="AllocationACK.cs" />
+    <Compile Include="BidRequest.cs" />
+    <Compile Include="BidResponse.cs" />
+    <Compile Include="BusinessMessageReject.cs" />
+    <Compile Include="DontKnowTrade.cs" />
+    <Compile Include="Email.cs" />
+    <Compile Include="ExecutionReport.cs" />
+    <Compile Include="Heartbeat.cs" />
+    <Compile Include="IndicationofInterest.cs" />
+    <Compile Include="ListCancelRequest.cs" />
+    <Compile Include="ListExecute.cs" />
+    <Compile Include="ListStatus.cs" />
+    <Compile Include="ListStatusRequest.cs" />
+    <Compile Include="ListStrikePrice.cs" />
+    <Compile Include="Logon.cs" />
+    <Compile Include="Logout.cs" />
+    <Compile Include="MarketDataIncrementalRefresh.cs" />
+    <Compile Include="MarketDataRequest.cs" />
+    <Compile Include="MarketDataRequestReject.cs" />
+    <Compile Include="MarketDataSnapshotFullRefresh.cs" />
+    <Compile Include="MassQuote.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="MessageFactory.cs" />
+    <Compile Include="NewOrderList.cs" />
+    <Compile Include="NewOrderSingle.cs" />
+    <Compile Include="News.cs" />
+    <Compile Include="OrderCancelReject.cs" />
+    <Compile Include="OrderCancelReplaceRequest.cs" />
+    <Compile Include="OrderCancelRequest.cs" />
+    <Compile Include="OrderStatusRequest.cs" />
+    <Compile Include="Quote.cs" />
+    <Compile Include="QuoteAcknowledgement.cs" />
+    <Compile Include="QuoteCancel.cs" />
+    <Compile Include="QuoteRequest.cs" />
+    <Compile Include="QuoteStatusRequest.cs" />
+    <Compile Include="Reject.cs" />
+    <Compile Include="ResendRequest.cs" />
+    <Compile Include="SecurityDefinition.cs" />
+    <Compile Include="SecurityDefinitionRequest.cs" />
+    <Compile Include="SecurityStatus.cs" />
+    <Compile Include="SecurityStatusRequest.cs" />
+    <Compile Include="SequenceReset.cs" />
+    <Compile Include="SettlementInstructions.cs" />
+    <Compile Include="TestRequest.cs" />
+    <Compile Include="TradingSessionStatus.cs" />
+    <Compile Include="TradingSessionStatusRequest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\QuickFix.csproj">
+      <Project>{d67079da-6c49-48b2-93ab-1c3e879f5a0b}</Project>
+      <Name>QuickFix</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
